@@ -1,0 +1,9 @@
+#Zadanie 
+print("Lista zakupów")
+shopping_dict = {"piekarnia": ["chleb", "bułki", "pączek"], "warzywniak": ["marchew", "seler", "rukola"]} 
+
+for shop, products in shopping_dict.items():
+    products_list = [produkt.capitalize() for produkt in products] 
+    shop = shop.capitalize() 
+    
+    print("Idę do", shop, ", kupuję tu następujące rzeczy:", products_list)
